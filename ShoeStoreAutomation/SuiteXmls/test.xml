@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SellerRatingAPI" parallel="false" thread-count="10">
+
+	<parameter name="browser" value="firefox"/>
+	<test name="ShoeAutomationtest_chrome" parallel="false">
+		<classes>	
+			<class name="test.ReleasedShoeTest" />
+			<class name="test.EmailforReminder" />
+		</classes>
+	</test>
+	
+	<!-- <parameter name="browser" value="firefox"/>
+	<test name="ShoeAutomationtest_firefox" parallel="false">
+		<classes>	
+			<class name="test.ReleasedShoeTest" />
+			<class name="test.EmailforReminder" />
+		</classes>
+	</test> -->
+
+</suite>

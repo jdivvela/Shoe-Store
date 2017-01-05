@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [SellerRatingAPI]">
+  <parameter name="browser" value="firefox"/>
+  <test name="ShoeAutomationtest_chrome(failed)" preserve-order="true">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="test.ReleasedShoeTest">
+        <methods>
+          <include name="close"/>
+          <include name="selectBrowser"/>
+          <include name="testMonth"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.ReleasedShoeTest -->
+      <class name="test.EmailforReminder">
+        <methods>
+          <include name="close"/>
+          <include name="testInvalidEMailReminder"/>
+          <include name="testEMailReminder"/>
+        </methods>
+      </class> <!-- test.EmailforReminder -->
+    </classes>
+  </test> <!-- ShoeAutomationtest_chrome(failed) -->
+</suite> <!-- Failed suite [SellerRatingAPI] -->
